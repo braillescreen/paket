@@ -1,10 +1,10 @@
-# 🔑 Paket – A vault to packaging and encrypt/decrypt your files in golang!
+# 🔑 Paket – A vault to package and encrypt/decrypt your files in golang!
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/SeanTolstoyevski/paket.svg)](https://pkg.go.dev/github.com/SeanTolstoyevski/paket) | [![Go Report Card](https://goreportcard.com/badge/github.com/SeanTolstoyevski/paket)](https://goreportcard.com/report/github.com/SeanTolstoyevski/paket)
 
 ## Table of Contents
 
-* [🔊 Informations](#-informations)
+* [🔊 Information](#-information)
 
 * [👩‍🏭👨‍🏭 What does it do](#what-does-it-do)
 
@@ -20,18 +20,18 @@
 
 * [🤔 FAQ](#-faq)
 
-## 🔊 Informations
+## 🔊 Information
 
 Hey,  
 this is not for archiving your files like 7-zip.
 
 We recommend that you take a look at the items below before using this module.  
-The world of encryption and encryption is a **complex  topic**. It is important to know what you are doing and what this module actually does.
+The world of encryption and decryption is a **complex  topic**. It is important to know what you are doing and what this module actually does.
 
 * Is it really secure? How secure is it?
 
-Frankly the person who wants to get the data can crack anything if tries. Especially if the program you are distributing runs directly on the user's computer and all data is with the program. However, what AES and Package do is complex enough.  
-Don't Remember, **every executable file is sensitive to disassembly**.  
+Frankly the person who wants to get the data can crack anything if they try. Especially if the program you are distributing runs directly on the user's computer and all data is within the program. However, what AES and Package do is complex enough.  
+Remember, **every executable file is sensitive to disassembly**.  
 You can pass your files through other complex processes before encrypting them. However, this causes your program to load files into memory slowly at run time.
 
 * What encryption algorithm does it use?
@@ -43,7 +43,7 @@ If enough people write to add new algorithms, we will add new algorithms to the 
 
 Imagine you are producing a game. You will probably have carefully designed animations and sound effects. You do not want users to receive this data.  
 If we think for this scenario; The package encrypts the files in the specified folder using AES with a key you specify. And it combines all encrypted files into a single file. Calculates the hash of the encrypted and unencrypted version of the file. Saves to a table. This is a little shield for people trying to deceive you.  
-Then, you can easily retrieve the decoded or encrypted version of your file from the encrypted file.  
+Then, you can easily retrieve the decoded or decrypted version of your file from the encrypted file.  
 Normally you should create a system to securely encrypt and decrypt your files.  
 This is a ready system 😎 .
 
@@ -51,7 +51,7 @@ This is a ready system 😎 .
 
 This module consists of two parts:
 1. CMD tool – command-line tool for encrypting and packaging files.
-2. "pengine" (paket engine) – subfolder that provides low-level APIs (reading encrypted datas, verifications etc...).
+2. "pengine" (paket engine) – subfolder that provides low-level APIs (reading encrypted data, verification etc...).
 
 To use Paket, you need to create a package file with the cmd tool.
 
@@ -134,10 +134,10 @@ If you want you can examine the codes in the [examples folder](https://github.co
 
 ## 😋 If you like this
 
-* 📝🖊 Please consider creating a PR or emailing me for grammatical errors and other language issues in documents. English is **not my native language**.
+* 📝🖊 Please consider creating a PR or emailing me for grammatical errors and other language issues in these documents. English is **not my native language**.
  - And we have a few not fixed issues right now.  [🤔 Any ideas or code for these](https://github.com/SeanTolstoyevski/paket/blob/master/developing_and_contribute.md).
 
-* If you can test for Linux and Darwin, that would be a great  for me. I am a blind software developer. I cannot set up an environment in Linux that can develop and test these projects. Linux's accessibility is not as good as Windows. No mac. I'll try to test as much as possible with the built-in `go test` though.
+* If you can test for Linux and Darwin, that would be great help for me. I am a blind software developer. I cannot set up an environment in Linux that can develop and test these projects. Linux's accessibility is not as good as Windows. No mac. I'll try to test as much as possible with the built-in `go test` though.
 
 * 💰🤑 If you don't want to do any of them and want to give financial support (like a cup of french press), you can send an e-mail
 
